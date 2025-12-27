@@ -203,7 +203,7 @@ const Hero = () => {
               transition={{ duration: 0.8, type: "spring" }}
               className="relative w-72 h-72 md:w-96 md:h-96"
             >
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary-500 to-indigo-600 rounded-[2rem] rotate-6 opacity-30 blur-2xl animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary-500 to-indigo-600 rounded-[12rem] rotate-6 opacity-30 blur-2xl animate-pulse" />
               <div className="relative w-full h-full rounded-[12rem] overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
                  <img 
                    src={PERSONAL_INFO.profileImage} 
