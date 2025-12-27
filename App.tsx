@@ -1,3 +1,5 @@
+import { collection, addDoc, Timestamp } from "firebase/firestore";
+import { db } from "./firebase";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { 
@@ -433,15 +435,34 @@ const Projects = () => {
 const Contact = () => {
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormState('submitting');
-    // Simulate API call
-    setTimeout(() => {
-      setFormState('success');
-      setTimeout(() => setFormState('idle'), 3000);
-    }, 1500);
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setFormState("submitting");
+
+  const form = e.target as HTMLFormElement;
+  const name = (form.querySelector("#name") as HTMLInputElement).value;
+  const email = (form.querySelector("#email") as HTMLInputElement).value;
+  const message = (form.querySelector("#message") as HTMLTextAreaElement).value;
+
+  try {
+    await addDoc(collection(db, "contactMessages"), {
+      name,
+      email,
+      message,
+      createdAt: Timestamp.now(),
+    });
+
+    setFormState("success");
+    form.reset();
+
+    setTimeout(() => setFormState("idle"), 3000);
+
+  } catch (err) {
+    console.error("Firestore error:", err);
+    setFormState("idle");
+  }
+};
+
 
   return (
     <section id="contact" className="py-24 bg-white dark:bg-dark-bg transition-colors duration-300">
