@@ -174,7 +174,7 @@ const Hero = () => {
                 Contact Me
               </a>
               <a 
-                href={PERSONAL_INFO.resumeUrl} 
+                href= "/resume.pdf" 
                 target="_blank"
                 download
                 className="px-8 py-3 rounded-full bg-transparent border border-primary-600 dark:border-primary-400 text-primary-600 dark:text-primary-400 font-medium hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all hover:scale-105 flex items-center gap-2"
@@ -201,12 +201,12 @@ const Hero = () => {
               transition={{ duration: 0.8, type: "spring" }}
               className="relative w-72 h-72 md:w-96 md:h-96"
             >
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary-500 to-indigo-600 rounded-[2rem] rotate-6 opacity-30 blur-2xl animate-pulse" />
-              <div className="relative w-full h-full rounded-[2rem] overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary-500 to-indigo-600 rounded-[50%] rotate-6 opacity-30 blur-2xl animate-pulse" />
+              <div className="relative aspect-[3/3] w-[350px] rounded-[50%]  overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
                  <img 
                    src={PERSONAL_INFO.profileImage} 
                    alt={PERSONAL_INFO.name} 
-                   className="w-full h-full object-cover"
+                   className="w-full h-full object-relative"
                  />
               </div>
             </motion.div>

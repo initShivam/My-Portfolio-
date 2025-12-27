@@ -8,6 +8,7 @@ import {
   GraduationCap
 } from 'lucide-react';
 import { ExperienceItem, Project, SkillCategory, SocialLink } from './types';
+import { webview } from 'framer-motion/client';
 
 export const PERSONAL_INFO = {
   name: "Shivam Singh",
@@ -16,7 +17,7 @@ export const PERSONAL_INFO = {
   email: "initshivam@gmail.com",
   location: "Vapi, Gujarat, India",
   // Replace this URL with your actual profile picture path (e.g., "/profile.jpg" or a hosted URL)
-  profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80", 
+  profileImage: "Untitled design (2).png", 
   // Replace with your actual resume PDF URL
   resumeUrl: "/resume.pdf", 
   summary: "I am an aspiring Data Analyst with a strong foundation in Python, SQL, Exploratory Data Analysis (EDA), and Power BI. Passionate about transforming raw data into meaningful business insights. My strength lies in consistent practice, hands-on learning, and a curiosity about real-world data problems.",
@@ -28,11 +29,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
     url: "https://www.linkedin.com/in/initshivam",
     icon: Linkedin
   },
-  {
-    platform: "Email",
-    url: `mailto:${PERSONAL_INFO.email}`,
-    icon: Mail
-  }
+ {
+  platform: "Email",
+  url: "https://mail.google.com/mail/?view=cm&fs=1&to=initshivam@gmail.com",
+  icon: Mail
+}
+
 ];
 
 export const SKILLS: SkillCategory[] = [
@@ -52,7 +54,7 @@ export const SKILLS: SkillCategory[] = [
     skills: [
       { name: "Python (Pandas, NumPy)", level: 85 },
       { name: "Matplotlib & Seaborn", level: 80 },
-      { name: "Machine Learning Basics", level: 60 },
+      { name: "Machine Learning Basics (Theory)", level: 60 },
     ]
   },
   {
@@ -63,6 +65,17 @@ export const SKILLS: SkillCategory[] = [
       { name: "Window Functions", level: 75 },
       { name: "Data Cleaning", level: 85 },
     ]
+  },
+  {
+    title: "Web Devlopment",
+    icon: webview,
+    skills: [
+      { name: "HTML5", level: 70 },
+      { name: "CSS", level: 75 },
+      { name: "BOOTSTRAP", level: 50 },
+      { name: "Django (python)", level: 70 },
+      { name: "Flask (python)", level: 60 },
+    ]
   }
 ];
 
@@ -71,7 +84,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     id: 1,
     role: "Data Science Intern",
     company: "CodSoft",
-    date: "June 2025 - Present", // Adjusting based on resume text which might be future dated or typo
+    date: "June 2025 - July 2025", 
     location: "Remote",
     description: [
       "Working on data science projects involving data cleaning and model building.",
@@ -100,6 +113,18 @@ export const EXPERIENCE: ExperienceItem[] = [
       "Learned network configuration and troubleshooting.",
       "Collaborated with the team on IT infrastructure maintenance."
     ]
+  },
+  {
+    id: 4,
+    role: "Data Analysis and Machine Learning Intern",
+    company: "NIELIT",
+    date: "sep 2022 - Sep 2022",
+    location: "Daman and Diu",
+    description: [
+      "Applied Python, pandas, NumPy for data cleaning, manipulation, and visualization",
+      "Conducted EDA to identify trends and supported ML model development using scikit-learn",
+      "Gained practical experience in machine learning workflows and data-driven analysis"
+    ]
   }
 ];
 
@@ -113,6 +138,11 @@ export const EDUCATION = [
     degree: "Diploma in Information Technology",
     school: "Gujarat Technological University",
     year: "2021 - 2024"
+  },
+  {
+    degree: "SSC (Secondary School Certificate)",
+    school: "Gujarat Secondary and Higher Secondary Education Board",
+    year: "2021"
   }
 ];
 
@@ -120,23 +150,30 @@ export const EDUCATION = [
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: "Sales Performance Dashboard",
-    description: "An interactive Power BI dashboard tracking KPI reporting, sales trends, and customer retention metrics. Inspired by real-world retail data analysis.",
+    title: "Super Sales Dashboard",
+    description: "Built interactive sales dashboard analyzing revenue, profit by region, category, and time periodCleaned data with Power Query, designed star schema data model with fact/dimension tables Created DAX measures for KPIs (Total Sales, Profit Margin) identifying top products and underperforming regions",
     tags: ["Power BI", "DAX", "Data Storytelling"],
-    image: "https://picsum.photos/600/400?random=1"
+    image: "/superstoresales.png"
   },
   {
     id: 2,
-    title: "Customer Churn Prediction",
-    description: "Exploratory Data Analysis (EDA) using Python to identify patterns in customer behavior and predict potential churn risks using statistical methods.",
-    tags: ["Python", "Pandas", "Seaborn", "Scikit-learn"],
-    image: "https://picsum.photos/600/400?random=2"
+    title: "Sales Performance Dashboard",
+    description: "An interactive Power BI dashboard tracking KPI reporting, sales trends, and customer retention metrics. Inspired by real-world retail data analysis.",
+    tags: ["Power BI", "DAX", "Data Storytelling"],
+    image: "/salesdashboard.png"
   },
   {
     id: 3,
-    title: "Retail Inventory SQL Analysis",
-    description: "Complex SQL queries using CTEs and Window Functions to optimize inventory levels and analyze product performance across different regions.",
-    tags: ["SQL", "Database Design", "Data Optimization"],
-    image: "https://picsum.photos/600/400?random=3"
+    title: "To-Do-List",
+    description: "This is a Flask-based To-Do List web application that allows users to register, log in, and manage tasks securely. The project demonstrates the use of Flask Blueprints, SQLAlchemy ORM, user authentication, and Jinja2 templates",
+    tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
+    image: "/Todolist.png"
+  },
+  {
+    id: 4,
+    title: "Django Expense Tracker Application",
+    description: "A Django-based Expense Tracker web application that helps users track income, expenses, and current balance with secure authentication. The project demonstrates Django fundamentals such as models, views, authentication, admin customization, and ORM aggregation",
+    tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
+    image: "/expense.png"
   }
 ];
