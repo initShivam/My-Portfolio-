@@ -169,6 +169,52 @@ export const PROJECTS: Project[] = [
     tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
     image: "/Todolist.png"
   },
+
+  export const CERTIFICATIONS = [
+ 
+  {
+    title: "Django Web Development - Self Paced.",
+    issuer: "GeeksforGeeks",
+    date: "2026",
+    image: "/django.jpg",
+    link: "https://media.geeksforgeeks.org/courses/certificates/7c72acff32c998a64d9a6d4926633e9e.pdf",
+  },
+  {
+    title: "Generative AI and ChatGPT - Self Paced",
+    issuer: "GeeksforGeeks",
+    date: "2026",
+    image: "/genAi.jpg",
+    link: "https://media.geeksforgeeks.org/courses/certificates/36109549a1d27920b520c9bbb0578afa.pdf",
+  },
+  {
+    title: "AWS Certified Solution Architect Associate Certification - Self Paced",
+    issuer: "GeeksforGeeks",
+    date: "2026",
+    image: "/awssolution.jpg",
+    link: "https://media.geeksforgeeks.org/courses/certificates/589a5d1c758fd5305db65e9c540e782f.pdf",
+  },
+  {
+    title: "IP Addressing and Subnetting Course",
+    issuer: "GeeksforGeeks",
+    date: "2026",
+    image: "/IPAddressing.jpg",
+    link: "https://media.geeksforgeeks.org/courses/certificates/3ef1785ab45a8f220a46c6c1a78ea6c1.pdf",
+  },
+   {
+    title: "Complete Python Pro Bootcamp",
+    issuer: "Udemy",
+    date: "2026",
+    image: "/python.jpg",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-3410e51f-8885-41d3-b22c-7ab17ed42d4b.jpg",
+  },
+   {
+    title: "Data Analysis with Python",
+    issuer: "IBM",
+    date: "2024",
+    image: "/dataanalysis.jpg",
+    link: "https://courses.cognitiveclass.ai/certificates/ce2ccf8f7cf94d4aa0118ab195eda5e9#",
+  },
+];
   {
     id: 4,
     title: "Django Expense Tracker Application",
