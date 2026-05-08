@@ -169,7 +169,15 @@ export const PROJECTS: Project[] = [
     tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
     image: "/Todolist.png"
   },
+  {
+    id: 4,
+    title: "Django Expense Tracker Application",
+    description: "A Django-based Expense Tracker web application that helps users track income, expenses, and current balance with secure authentication. The project demonstrates Django fundamentals such as models, views, authentication, admin customization, and ORM aggregation",
+    tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
+    image: "/expense.png"
+  }
 ];
+
   export const CERTIFICATIONS = [
  
   {
@@ -214,12 +222,4 @@ export const PROJECTS: Project[] = [
     image: "/dataanalysis.jpg",
     link: "https://courses.cognitiveclass.ai/certificates/ce2ccf8f7cf94d4aa0118ab195eda5e9#",
   },
-];
-  {
-    id: 4,
-    title: "Django Expense Tracker Application",
-    description: "A Django-based Expense Tracker web application that helps users track income, expenses, and current balance with secure authentication. The project demonstrates Django fundamentals such as models, views, authentication, admin customization, and ORM aggregation",
-    tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
-    image: "/expense.png"
-  }
 ];
