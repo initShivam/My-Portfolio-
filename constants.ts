@@ -169,7 +169,7 @@ export const PROJECTS: Project[] = [
     tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
     image: "/Todolist.png"
   },
-
+];
   export const CERTIFICATIONS = [
  
   {
