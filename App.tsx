@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import { PERSONAL_INFO, SKILLS, EXPERIENCE, PROJECTS, SOCIAL_LINKS, EDUCATION } from './constants';
 import ChatBot from './ChatBot';
-
+import { CERTIFICATIONS } from './constants';
 // --- Utility Components ---
 
 const SectionTitle = ({ children, subtitle }: { children?: React.ReactNode; subtitle?: string }) => (
@@ -61,6 +61,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: { darkMode: boolean; toggleDarkMod
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Certifications', href: '#certifications' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -379,6 +380,65 @@ const Experience = () => {
   );
 };
 
+const Certifications = () => {
+  return (
+    <section
+      id="certifications"
+      className="py-24 bg-white dark:bg-dark-bg transition-colors duration-300"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionTitle subtitle="Courses and certifications I have completed.">
+          Certifications
+        </SectionTitle>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {CERTIFICATIONS.map((cert, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="group bg-slate-50 dark:bg-dark-card rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300"
+            >
+              <div className="h-64 bg-white dark:bg-slate-900 p-3 flex items-center justify-center overflow-hidden">
+              <img
+                src={cert.image}
+                alt={cert.title}
+                className="w-full h-full object-contain rounded-lg transition-transform duration-500 group-hover:scale-105"
+              />
+               </div>
+
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                  {cert.title}
+                </h3>
+
+                <p className="text-primary-600 dark:text-primary-400 text-sm mb-1">
+                  {cert.issuer}
+                </p>
+
+                <p className="text-slate-500 text-sm mb-4">
+                  {cert.date}
+                </p>
+
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                >
+                  View Certificate <ExternalLink size={16} />
+                </a>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Projects = () => {
   return (
     <section id="projects" className="py-24 bg-slate-50 dark:bg-[#0b1121] transition-colors duration-300">
@@ -600,6 +660,7 @@ export default function App() {
         <About />
         <Skills />
         <Experience />
+        <Certifications />
         <Projects />
         <Contact />
       </main>
