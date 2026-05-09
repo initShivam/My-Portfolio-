@@ -2,12 +2,12 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send, Sparkles, User, Bot } from 'lucide-react';
 import { GoogleGenAI } from "@google/genai";
-import { PERSONAL_INFO, SKILLS, EXPERIENCE, PROJECTS, EDUCATION } from './constants';
+import { PERSONAL_INFO, SKILLS, EXPERIENCE,CERTIFICATIONS, PROJECTS, EDUCATION } from './constants';
 
 const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'model'; text: string }[]>([
-    { role: 'model', text: `Hi! I'm an AI assistant for ${PERSONAL_INFO.name}. Ask me anything about his skills, projects, or experience.` }
+    { role: 'model', text: `Hi! I'm an AI assistant for ${PERSONAL_INFO.name}. Ask me anything about skills, certifications, projects, internships, or education.` }
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -45,10 +45,11 @@ const ChatBot = () => {
         experience: EXPERIENCE,
         projects: PROJECTS,
         education: EDUCATION
+        certifications: CERTIFICATIONS
       });
 
       const systemInstruction = `You are a friendly and professional AI portfolio assistant for ${PERSONAL_INFO.name}. 
-      Your goal is to answer questions about ${PERSONAL_INFO.name}'s professional background, skills, and projects based strictly on the provided context.
+      Your goal is to answer questions about ${PERSONAL_INFO.name}'s professional background, skills, certifications, education, and projects.
       
       Context Data:
       ${context}
