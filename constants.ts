@@ -180,7 +180,7 @@ export const PROJECTS: Project[] = [
     id: 1,
     title: "Job Application Tracker",
     description: "Job Tracker, a full-stack web application built with Django, Python, PostgreSQL (Neon), Bootstrap 5, Railway, Gunicorn, and WhiteNoise to manage job applications, resumes, interviews, and application analytics in one place. This project strengthened my skills in Django Authentication, PostgreSQL integration, cloud deployment, Git/GitHub, and production debugging while solving real-world deployment challenges.",
-    tags: ["Python", "Django", "HTML,"JAVASCRIPT", "BOOTSTRAP","PostgreSql"],
+    tags: ["Python", "Django", "HTML","BOOTSTRAP","PostgreSql"],
     image: "/ChatGPT Image Jul 9, 2026, 08_39_53 PM.png"
   }
 ];
