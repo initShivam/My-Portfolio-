@@ -44,8 +44,8 @@ const ChatBot = () => {
         skills: SKILLS,
         experience: EXPERIENCE,
         projects: PROJECTS,
-        education: EDUCATION
-        certifications: CERTIFICATIONS
+        education: EDUCATION,
+        certifications: CERTIFICATIONS,
       });
 
       const systemInstruction = `You are a friendly and professional AI portfolio assistant for ${PERSONAL_INFO.name}. 
