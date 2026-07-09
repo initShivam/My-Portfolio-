@@ -149,14 +149,14 @@ export const EDUCATION = [
 // Inferred projects based on skills since specific project details were light in PDF
 export const PROJECTS: Project[] = [
   {
-    id: 1,
+    id: 2,
     title: "Super Sales Dashboard",
     description: "Built interactive sales dashboard analyzing revenue, profit by region, category, and time periodCleaned data with Power Query, designed star schema data model with fact/dimension tables Created DAX measures for KPIs (Total Sales, Profit Margin) identifying top products and underperforming regions",
     tags: ["Power BI", "DAX", "Data Storytelling"],
     image: "/superstoresales.png"
   },
   {
-    id: 2,
+    id: 4,
     title: "Sales Performance Dashboard",
     description: "An interactive Power BI dashboard tracking KPI reporting, sales trends, and customer retention metrics. Inspired by real-world retail data analysis.",
     tags: ["Power BI", "DAX", "Data Storytelling"],
@@ -170,11 +170,18 @@ export const PROJECTS: Project[] = [
     image: "/Todolist.png"
   },
   {
-    id: 4,
+    id: 5,
     title: "Django Expense Tracker Application",
     description: "A Django-based Expense Tracker web application that helps users track income, expenses, and current balance with secure authentication. The project demonstrates Django fundamentals such as models, views, authentication, admin customization, and ORM aggregation",
     tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
     image: "/expense.png"
+  },
+  {
+    id: 1,
+    title: "Job Application Tracker",
+    description: "Job Tracker, a full-stack web application built with Django, Python, PostgreSQL (Neon), Bootstrap 5, Railway, Gunicorn, and WhiteNoise to manage job applications, resumes, interviews, and application analytics in one place. This project strengthened my skills in Django Authentication, PostgreSQL integration, cloud deployment, Git/GitHub, and production debugging while solving real-world deployment challenges.",
+    tags: ["Python", "Django", "HTML,"JAVASCRIPT", "BOOTSTRAP","PostgreSql"],
+    image: "/ChatGPT Image Jul 9, 2026, 08_39_53 PM.png"
   }
 ];
 
