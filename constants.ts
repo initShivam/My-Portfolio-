@@ -149,32 +149,12 @@ export const EDUCATION = [
 // Inferred projects based on skills since specific project details were light in PDF
 export const PROJECTS: Project[] = [
   {
-    id: 6,
-    title: "Super Sales Dashboard",
-    description: "Built interactive sales dashboard analyzing revenue, profit by region, category, and time periodCleaned data with Power Query, designed star schema data model with fact/dimension tables Created DAX measures for KPIs (Total Sales, Profit Margin) identifying top products and underperforming regions",
-    tags: ["Power BI", "DAX", "Data Storytelling"],
-    image: "/superstoresales.png"
-  },
-  {
-    id: 5,
-    title: "Sales Performance Dashboard",
-    description: "An interactive Power BI dashboard tracking KPI reporting, sales trends, and customer retention metrics. Inspired by real-world retail data analysis.",
-    tags: ["Power BI", "DAX", "Data Storytelling"],
-    image: "/salesdashboard.png"
-  },
-  {
-    id: 4,
-    title: "To-Do-List",
-    description: "This is a Flask-based To-Do List web application that allows users to register, log in, and manage tasks securely. The project demonstrates the use of Flask Blueprints, SQLAlchemy ORM, user authentication, and Jinja2 templates",
-    tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
-    image: "/Todolist.png"
-  },
-  {
-    id: 3,
-    title: "Django Expense Tracker Application",
-    description: "A Django-based Expense Tracker web application that helps users track income, expenses, and current balance with secure authentication. The project demonstrates Django fundamentals such as models, views, authentication, admin customization, and ORM aggregation",
-    tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
-    image: "/expense.png"
+    id: 1,
+    title: "Ai Resume Analyzer",
+    description:
+      "I built an AI-powered Resume Analyzer that helps recruiters evaluate and rank candidates by comparing resumes against a job description using Large Language Models.",
+    tags: ["Python", "Django", "HTML","BOOTSTRAP","PostgreSql"],
+    image: "/resume_analyzer.png",
   },
   {
     id: 2,
@@ -184,12 +164,32 @@ export const PROJECTS: Project[] = [
     image: "/ChatGPT Image Jul 9, 2026, 08_39_53 PM.png"
   },
   {
-    id: 1,
-    title: "Ai Resume Analyzer",
-    description:
-      "I built an AI-powered Resume Analyzer that helps recruiters evaluate and rank candidates by comparing resumes against a job description using Large Language Models.",
-    tags: ["Python", "Django", "HTML","BOOTSTRAP","PostgreSql"],
-    image: "/resume_analyzer.png",
+    id: 3,
+    title: "Django Expense Tracker Application",
+    description: "A Django-based Expense Tracker web application that helps users track income, expenses, and current balance with secure authentication. The project demonstrates Django fundamentals such as models, views, authentication, admin customization, and ORM aggregation",
+    tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
+    image: "/expense.png"
+  },
+  {
+    id: 4,
+    title: "To-Do-List",
+    description: "This is a Flask-based To-Do List web application that allows users to register, log in, and manage tasks securely. The project demonstrates the use of Flask Blueprints, SQLAlchemy ORM, user authentication, and Jinja2 templates",
+    tags: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP","FLASK"],
+    image: "/Todolist.png"
+  },
+  {
+    id: 5,
+    title: "Sales Performance Dashboard",
+    description: "An interactive Power BI dashboard tracking KPI reporting, sales trends, and customer retention metrics. Inspired by real-world retail data analysis.",
+    tags: ["Power BI", "DAX", "Data Storytelling"],
+    image: "/salesdashboard.png"
+  },
+  {
+    id: 6,
+    title: "Super Sales Dashboard",
+    description: "Built interactive sales dashboard analyzing revenue, profit by region, category, and time periodCleaned data with Power Query, designed star schema data model with fact/dimension tables Created DAX measures for KPIs (Total Sales, Profit Margin) identifying top products and underperforming regions",
+    tags: ["Power BI", "DAX", "Data Storytelling"],
+    image: "/superstoresales.png"
   }
 ];
 
